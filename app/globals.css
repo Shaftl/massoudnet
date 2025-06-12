@@ -26,6 +26,11 @@ Large: 1.8
 /* h3 = font-weight: 400; */
 
 :root {
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --accent: #0067ff;
+  --accent-light: rgba(0, 103, 255, 0.2);
+  --border-radius: 1.2rem;
+
   --color-neutral-100: #f9f9f9; /* Lightest - background or surface */
   --color-neutral-150: #e7e5e5a0; /* Light surface - cards, borders */
   --color-neutral-150-opacity-1: #e7e5e54a; /* Light surface - cards, borders */

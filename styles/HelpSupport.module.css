@@ -1,10 +1,4 @@
 /* HelpSupport.module.css */
-:root {
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --accent: #0067ff;
-  --accent-light: rgba(0, 103, 255, 0.2);
-  --border-radius: 1.2rem;
-}
 
 .container {
   max-width: 1200px;
