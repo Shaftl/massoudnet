@@ -1,0 +1,97 @@
+/* forgot-password/page.module.css */
+
+.forgotWrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  padding: 2.6rem;
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+
+.forgotBox {
+  background: var(--color-card);
+  border-radius: 2rem;
+  padding: 3rem 2.5rem;
+  max-width: 40rem;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.stepText {
+  margin-bottom: 1.5rem;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.input {
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid var(--color-bg);
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+  border-radius: 6rem;
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background-color: var(--color-text);
+  border: none;
+  border-radius: 60rem;
+  font-size: 1.4rem;
+  color: var(--color-bg);
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button:not(:disabled):hover {
+  background-color: var(--primary-color);
+}
+
+.error {
+  color: #f87171; /* red-400 */
+  font-size: 1rem;
+  margin: -0.8rem 0.8rem 1.2rem 0.8rem;
+}
+
+.checkList {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+  margin-left: 0.4rem;
+}
+
+.checkListItem {
+  list-style: none;
+
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

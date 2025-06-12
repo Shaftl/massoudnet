@@ -1,0 +1,106 @@
+.post {
+  /* padding: 2.6rem !important; */
+  padding: 0;
+  margin-bottom: 2.6rem;
+}
+
+.postUserInfo {
+  padding: 2rem 0 0 2rem;
+}
+.postStatus {
+  padding: 2rem;
+}
+
+.postContentText {
+  padding-left: 2rem;
+}
+
+.topRightIcons {
+  padding: 2rem;
+}
+
+.postSContainer {
+  position: relative;
+}
+
+.postUserInfo {
+  gap: 1.6rem !important;
+  margin-bottom: 2rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.postUserImgAndGroup {
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.postUserImgAndGroup img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.postUserImgAndGroup img:nth-child(2) {
+  position: absolute;
+  bottom: -0.4rem;
+  right: -0.6rem;
+  width: 70%;
+  height: 70%;
+  border: 2px solid var(--color-card);
+}
+
+.postUserName {
+  margin-bottom: 4px;
+}
+
+.topRightIcons {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  gap: 2rem;
+}
+
+.topRightIcons > * {
+  cursor: pointer;
+}
+
+.postContentText {
+  line-height: 1.4;
+  margin-bottom: 1.6rem;
+}
+
+.postImg {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.postContent {
+}
+
+.postStatus {
+  border-top: 1px solid var(--header-border-color);
+  padding-top: 1.6rem;
+  gap: 5rem !important;
+}
+
+.postStatus > * {
+  cursor: pointer;
+}
+
+.statusBox {
+  gap: 1.6rem;
+}
+
+.statusBox div {
+  gap: 0.6rem;
+}

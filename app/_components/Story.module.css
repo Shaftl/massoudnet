@@ -1,0 +1,238 @@
+.story {
+  width: 100%;
+  height: auto;
+}
+
+.storyContainer {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.createStory {
+  min-width: 5.8rem;
+  min-height: 5.8rem;
+  background: var(--color-card);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.stories {
+  position: relative;
+}
+
+.storyUser {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border: 3px solid var(--primary-color);
+}
+
+.storyPost {
+  width: 14rem !important;
+  height: 18rem;
+  object-fit: cover;
+  border-radius: 3.6rem;
+}
+
+.createStoryPopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: auto;
+  background-color: var(--color-card);
+  transform: translate(-50%, -50%);
+  border-radius: 4rem;
+  padding: 2.6rem;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000000000;
+  background: var(--color-neutral-150-opacity-1);
+  backdrop-filter: blur(10px);
+}
+
+.closePopupBtn {
+  background: var(--color-neutral-150-opacity-1);
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  z-index: 1000;
+}
+
+.sourcePlacholder {
+  width: 100%;
+  height: 30rem;
+  border: 1.6px dashed var(--color-bg);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.sourcePlacholder:hover {
+  background: var(--color-neutral-150-opacity-1);
+}
+
+.selectedSource {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.privacySelect {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: var(--color-neutral-150);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+
+  border: 1px solid var(--color-neutral-150);
+}
+
+.uploadBtn {
+  background-color: var(--primary-color);
+  padding: 1.2rem 2.4rem;
+  color: var(--color-bg);
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* container for track + text */
+.progressBarWrapper {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+  overflow: hidden;
+
+  border-radius: inherit;
+  backdrop-filter: blur(10px);
+}
+
+/* the grey “track” behind the fill */
+.progressTrack {
+  flex: 1;
+  height: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(140, 140, 140, 0.519);
+}
+
+/* the colored fill bar */
+.progressBar {
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  opacity: 0.4;
+  transition: width 0.2s ease;
+}
+
+/* the percentage text */
+.progressText {
+  font-size: 1.6rem;
+  color: var(--color-card);
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.moreOptionBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  border: none;
+  outline: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.moreOptionContent {
+  position: absolute;
+  top: 6rem;
+  right: 1rem;
+  z-index: 1000;
+  background: var(--color-neutral-150-opacity-1);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.storyOption label {
+  width: 100%;
+  height: 100%;
+}
+
+.storyOption {
+  padding: 1rem 1.65rem;
+  border-radius: 2rem;
+  background: var(--color-neutral-150);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  text-align: left;
+
+  border: 1px solid var(--color-neutral-150);
+}

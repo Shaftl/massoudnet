@@ -1,0 +1,52 @@
+/* PatternLock.module.css */
+
+/*──────────────────────────────────────────────────────────────────*/
+/* A 300×300 container laid out as a 3×3 grid (9 equally sized cells). */
+/* Each “.dot” is centered in its 100×100 cell, and the canvas sits     */
+/* completely behind the dots (300×300, absolute).                      */
+/*──────────────────────────────────────────────────────────────────*/
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-top: 10rem;
+
+  /* Create a 3×3 grid so that each dot sits in a 100×100 cell */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  /* Disable default touch scrolling/zoom so we can capture touches */
+  touch-action: none;
+  user-select: none;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  z-index: 0; /* behind all .dot elements */
+}
+
+.dot {
+  /* Each grid cell is 100×100; center a 24×24 circle within it */
+  width: 24px;
+  height: 24px;
+  margin: auto; /* perfectly centers in its 100×100 grid cell */
+
+  background-color: white;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  z-index: 1; /* above the canvas */
+
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* When a dot’s index is in `path`, we add “active” to make it blue */
+.dot.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}

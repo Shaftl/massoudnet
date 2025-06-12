@@ -1,0 +1,59 @@
+.gridWrapper {
+  width: 100%;
+  height: 30rem;
+  cursor: pointer;
+}
+
+.mediaItem {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay for additional images beyond 6 */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+
+.gridWrapper > .mediaItem:nth-child(7) {
+  display: none; /* Hide the 7th and any further images */
+}
+
+.gridWrapper > .mediaItem:nth-child(n + 7) {
+  display: none; /* Hide all items beyond the 6th one */
+}
+
+.plusOverlay {
+  display: block; /* Show the overlay with +7 for extra images */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

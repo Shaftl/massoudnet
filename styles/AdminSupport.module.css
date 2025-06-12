@@ -1,0 +1,42 @@
+.container {
+  max-width: 900px;
+  margin: 10rem auto;
+  margin-bottom: 1rem;
+  padding: 20px;
+  font-family: inherit;
+}
+
+.h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.messageList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--color-card);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: right;
+}

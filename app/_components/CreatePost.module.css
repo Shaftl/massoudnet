@@ -1,0 +1,164 @@
+.createPost {
+  padding: 2.6rem !important;
+  position: relative;
+}
+
+.topAction {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.4rem;
+}
+
+.userImg {
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.topAction textarea {
+  background: var(--color-neutral-150);
+  width: 100%;
+  resize: vertical;
+}
+
+.postContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postContent button {
+  padding: 1.2rem 3rem;
+  border-radius: 3rem;
+  border: none;
+  background: var(--primary-color);
+  color: var(--color-bg);
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.postSource {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.postSourceIcons {
+  cursor: pointer;
+  border: 1px solid var(--color-bg);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+
+.postSourceIcons:hover {
+  background: var(--color-bg);
+}
+
+.previewWrapper {
+  position: relative;
+}
+
+.previewMedia {
+  width: 100%;
+  border-radius: 3rem;
+  margin: 1rem 0;
+}
+
+.removeBtn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background: var(--color-neutral-150-opacity-1);
+  width: 4.6rem;
+  height: 4.6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  border: none;
+}
+
+.privacySelect {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background: var(--color-neutral-150);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+
+  border: 1px solid var(--color-neutral-150);
+}
+
+/* container for track + text */
+.progressBarWrapper {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 2rem);
+
+  border-radius: inherit;
+  overflow: hidden;
+
+  border-radius: 3rem;
+  backdrop-filter: blur(10px);
+  margin: 1rem 0;
+}
+
+/* the grey “track” behind the fill */
+.progressTrack {
+  flex: 1;
+  height: 100%;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(140, 140, 140, 0.519);
+}
+
+/* the colored fill bar */
+.progressBar {
+  width: 100%;
+  background: var(--primary-color);
+  border-radius: 2px;
+  opacity: 0.4;
+  transition: width 0.2s ease;
+}
+
+/* the percentage text */
+.progressText {
+  font-size: 1.6rem;
+  color: var(--color-card);
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* CreatePost.module.css */
+.emojiPickerWrapper {
+  position: absolute;
+  top: 105%; /* tweak based on your layout */
+  left: 2rem; /* align under the emoji button */
+  z-index: 10;
+}
+
+.closeEmojiBtn {
+  position: absolute;
+  top: 0rem;
+  right: -4.2rem;
+  z-index: 1000;
+  border-radius: 0;
+}

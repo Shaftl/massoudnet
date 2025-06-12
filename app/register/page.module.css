@@ -1,0 +1,116 @@
+.loginWrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-bg);
+  padding: 2rem;
+  z-index: 10000;
+}
+
+.loginBox {
+  max-width: 70rem;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 4rem !important;
+  position: relative;
+}
+
+.logo {
+  margin-bottom: 3.6rem;
+}
+
+.logo img {
+  height: 5rem;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid var(--color-bg);
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+  border-radius: 6rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 60rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  color: var(--color-bg);
+  border: none;
+}
+
+.registerLink {
+  margin-left: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.spinner {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 3px solid #fff;
+  border-top: 3px solid #555;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 1s linear infinite;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkList {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  margin-left: 0.4rem;
+}
+
+.checkListItem {
+  list-style: none;
+
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

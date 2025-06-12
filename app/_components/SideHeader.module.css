@@ -1,0 +1,19 @@
+.sideHeader {
+  grid-row: 1 / -1;
+  height: 100%;
+  position: relative;
+  z-index: 1001;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.sideHeaderContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 8.6rem 1fr 12rem;
+  padding: 1.4rem 0;
+  justify-content: center;
+}

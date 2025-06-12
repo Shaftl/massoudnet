@@ -1,0 +1,141 @@
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 30rem;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  background: var(--color-card);
+  color: var(--white-color);
+  border-radius: 1.6rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.085);
+  padding: 2.6rem;
+  z-index: 999;
+  max-height: 40rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.close {
+  cursor: pointer;
+  /* padding: 0.4rem; */
+  border-radius: 50%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 0;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 1.2rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.item img {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item:hover .name {
+  /* border-bottom: 1px solid var(--color-bg); */
+  text-decoration-line: underline;
+  color: var(--primary-color);
+}
+
+.details {
+  flex: 1;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.loading {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+
+.noResults {
+  padding: 1rem;
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate dropdown */
+.dropdown {
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+/* Animate each item */
+.item {
+  transition: background 0.2s ease, transform 0.2s ease;
+  animation: fadeUp 0.3s ease forwards;
+}
+
+/* Animate loading and noResults messages */
+.loading,
+.noResults {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.searchPostImg {
+  width: 5rem !important;
+  height: 5rem !important;
+  border-radius: 1rem !important;
+}

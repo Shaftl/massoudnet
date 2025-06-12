@@ -1,0 +1,16 @@
+.sideThree {
+  height: calc(100vh - 11rem);
+  margin-top: 10rem;
+  border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sideThree button {
+  /* background-color: var(--color-bg); */
+}
+
+.sideThree button:hover {
+  background-color: var(--color-bg);
+}

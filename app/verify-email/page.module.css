@@ -1,0 +1,50 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-bg);
+  padding: 2rem;
+  z-index: 10000;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 60rem;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  font-family: inherit;
+  color: var(--color-bg);
+  border: none;
+}
+
+.box {
+  padding: 2.6rem;
+}
+
+.input {
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid var(--color-bg);
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+  border-radius: 6rem;
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+}

@@ -1,0 +1,256 @@
+.loginWrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-bg);
+  padding: 2rem !important;
+  z-index: 100000000000000000000;
+}
+
+.editSettings {
+  height: calc(100vh - 10rem);
+  gap: 2rem;
+  grid-template-columns: 22rem 1fr;
+}
+
+.form {
+  overflow: auto;
+}
+
+.sidebar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: flex-start;
+  height: calc(100vh - 11rem);
+}
+
+.loginBox {
+  max-width: 68rem !important;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 4rem !important;
+  position: relative;
+}
+
+.logo {
+  margin-bottom: 3.6rem;
+}
+
+.logo img {
+  height: 5rem;
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  font-family: inherit;
+  background: transparent;
+  border: 1px solid var(--color-bg);
+  padding: 1.2rem 1.8rem;
+  outline: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  backdrop-filter: blur(10px);
+  border-radius: 6rem;
+  width: 100%;
+}
+
+.form label {
+  font-size: 1.3rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  border-radius: 60rem;
+  cursor: pointer;
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  font-family: inherit;
+}
+
+.registerLink {
+  margin-left: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.danger {
+  font-size: 1.4rem;
+  background: none;
+  border: none;
+  color: var(--red-color);
+  padding: 1rem 0rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.danger:hover {
+  color: red;
+}
+
+.editText {
+  background: #ffffff0b;
+  padding: 1.2rem 1.4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.editText:first-child {
+  margin-bottom: 1.4rem;
+}
+
+.activeEdit {
+  background: #00ffe119;
+}
+
+.activePassword {
+  background: #0066ff1d;
+}
+
+.imageUploadBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.imagePreviewWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilePreview {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.changePicButton {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  color: var(--color-text);
+  background: none;
+  padding: 1rem 1.8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  background: var(--color-neutral-150);
+}
+
+.changePicButton:hover {
+  background: var(--primary-color);
+  color: var(--color-bg);
+}
+
+.uploadPlaceholder {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px dashed var(--color-bg);
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--white-color);
+  text-align: center;
+  transition: background 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.uploadPlaceholder:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.progressBarContainer {
+  width: 100%;
+  background-color: #444;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.progressBarFill {
+  height: 100%;
+  background-color: #00bcd4;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* ───────────────────────────────────────────────────── */
+/* → Add cropping modal styles below: */
+
+.cropModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10px);
+  z-index: 99900000000000000000000000000000000000000000000000000000000000000000;
+}
+
+.cropContainer {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  max-height: 500px;
+  background: var(--color-bg);
+  border-radius: 3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* If using CSS Modules, let the Cropper fill its parent: */
+.cropContainer :global(.reactEasyCrop_CropArea) {
+  flex: 1;
+  border-radius: 50%;
+}
+
+/* Style the “Crop & Upload” button inside */
+.cropContainer button {
+  margin-top: 1rem;
+  align-self: center;
+}
+
+.cropButton {
+  padding: 1.4rem;
+  background: var(--primary-color);
+  color: var(--color-bg);
+  border: none;
+  outline: none;
+  font-family: inherit;
+  border-radius: 10rem;
+  cursor: pointer;
+  width: auto;
+}
