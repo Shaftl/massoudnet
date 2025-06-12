@@ -5,7 +5,7 @@ import styles from "@/app/friends/page.module.css";
 import ProtectedRoute from "../_components/ProtectedRoute";
 import Link from "next/link";
 
-export default function FriendRequestsPage({ onChange }) {
+export default function FriendRequestsPage() {
   const [requests, setRequests] = useState([]);
 
   // Fetch pending friend requests
@@ -54,7 +54,6 @@ export default function FriendRequestsPage({ onChange }) {
         toast.success(`Friend request ${action}ed`);
         setRequests((prev) => prev.filter((r) => r._id !== senderId));
         // Tell parent to re-fetch friends / allUsers / sentRequests
-        onChange?.();
       } else {
         toast.error(data.error || "Failed to respond to request");
       }
