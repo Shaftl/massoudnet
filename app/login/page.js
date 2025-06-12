@@ -107,7 +107,7 @@ export default function Login() {
         </form>
 
         <p className="paragraph-md" style={{ textAlign: "center" }}>
-          Don&apos;t have an account?
+          Don't have an account?
           <Link href="/register" className={styles.registerLink}>
             {" "}
             Create one
