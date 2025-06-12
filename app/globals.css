@@ -417,3 +417,20 @@ strong {
   z-index: 999999 !important;
   font-size: 1.4rem;
 }
+
+/* app/globals.css */
+
+/* scrollbar styling: */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* root variables: */

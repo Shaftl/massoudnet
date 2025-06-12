@@ -48,16 +48,6 @@
   overflow: auto;
 }
 
-.mainContent::-webkit-scrollbar {
-  background-color: transparent;
-  width: 0.4rem;
-}
-
-.mainContent::-webkit-scrollbar-thumb {
-  background-color: var(--color-bg);
-  border-radius: 3rem;
-}
-
 .header {
   display: flex;
   justify-content: space-between;

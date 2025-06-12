@@ -8,14 +8,3 @@
   flex-direction: column;
   gap: 2.6rem;
 }
-
-.feedPage::-webkit-scrollbar {
-  width: 0.6rem;
-  /* background-color: var(--color-bg); */
-  background-color: transparent;
-  display: none;
-}
-
-.feedPage::-webkit-scrollbar-thumb {
-  background: var(--color-card);
-}

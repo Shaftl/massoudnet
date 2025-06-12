@@ -103,13 +103,4 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: 1rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-bg);
-  border-radius: 2rem;
-}
+/* rest of your scoped, module-local rules… */
