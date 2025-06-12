@@ -61,7 +61,7 @@ function EditPostModal({
           value={editText}
           onChange={(e) => setEditText(e.target.value)}
           className="field"
-          placeholder="What's on your mind?"
+          placeholder="What&apos;s on your mind?"
           rows="4"
           disabled={isUpdating}
         />

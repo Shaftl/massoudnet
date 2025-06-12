@@ -18,7 +18,7 @@ export default function AdminSupportMessages() {
 
   useEffect(() => {
     if (user && user._id !== "683896af024f013387ef6920") {
-      toast.error("Don't touch in higer switches");
+      toast.error("Don&apos;t touch in higer switches");
       router.replace("/");
     }
   }, [user, router]);

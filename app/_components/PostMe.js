@@ -59,7 +59,7 @@ export default function PostMe({ refreshTrigger }) {
       const data = await res.json();
       if (res.ok) setPosts(data);
     } catch {
-      toast.error("Failed to load user's posts");
+      toast.error("Failed to load user&apos;s posts");
     }
   };
 

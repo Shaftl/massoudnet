@@ -61,7 +61,7 @@ export default function PostId() {
       const data = await res.json();
       if (res.ok) setPosts(data);
     } catch {
-      toast.error("Couldn't load posts");
+      toast.error("Couldn&apos;t load posts");
     }
   };
 

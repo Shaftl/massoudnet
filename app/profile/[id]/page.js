@@ -73,7 +73,7 @@ export default function OtherProfile() {
         const data = await res.json();
         if (res.ok) setFriends(data.friends || []);
       } catch {
-        toast.error("Couldn't load friends");
+        toast.error("Couldn&apos;t load friends");
       }
     };
 
@@ -93,7 +93,7 @@ export default function OtherProfile() {
         setFollowerCount(followers.length);
         setIsFollowing(followers.some((f) => f._id === currentUser._id));
       } catch {
-        toast.error("Couldn't load follower data");
+        toast.error("Couldn&apos;t load follower data");
       }
     })();
 
@@ -780,7 +780,7 @@ export default function OtherProfile() {
                       )}
                     </>
                   ) : (
-                    <p>This user{"'"}s posts are private.</p>
+                    <p>This user&apos;s posts are private.</p>
                   )}
                 </div>
               </div>

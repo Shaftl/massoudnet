@@ -81,7 +81,7 @@ export default function CreatePostInGroup({ groupId, setTriger }) {
   );
 
   const placeholder = user?.name
-    ? `What's on your mind, ${user.name}?`
+    ? `What&apos;s on your mind, ${user.name}?`
     : "Write something...";
 
   return (

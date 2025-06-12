@@ -62,7 +62,7 @@ function EditPostModalGroup({
         <textarea
           className="field"
           rows={4}
-          placeholder="What's on your mind?"
+          placeholder="What&apos;s on your mind?"
           disabled={isUpdating}
           value={editText}
           onChange={(e) => setEditText(e.target.value)}

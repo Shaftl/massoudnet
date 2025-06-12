@@ -91,8 +91,8 @@ export default function CreatePost({ onPostCreated }) {
   const isVideo = file?.type?.startsWith("video/");
   const placeholder =
     hasMounted && user?.name
-      ? `What's on your mind, ${user.name}?`
-      : "What's on your mind?";
+      ? `What&apos;s on your mind, ${user.name}?`
+      : "What&apos;s on your mind?";
 
   return (
     <div className={`card ${styles.createPost}`}>
