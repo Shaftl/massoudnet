@@ -24,7 +24,7 @@ export default function MediaGrid({ media, onMediaClick }) {
           {url.endsWith(".mp4") ? (
             <video src={url} className={styles.media} muted />
           ) : (
-            <img src={url} className={styles.media} alt="" />
+            <img src={url} className={styles.media} alt="example" />
           )}
         </div>
       ))}

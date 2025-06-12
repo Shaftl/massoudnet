@@ -3,7 +3,7 @@ import path from "path";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
-    turbo: false,
+    turbo: { loaders: true }, // ✅ proper object format
   },
   images: {
     domains: ["res.cloudinary.com"], // ✅ allows Next.js Image to use Cloudinary

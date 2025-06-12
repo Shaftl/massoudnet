@@ -136,7 +136,10 @@ export default function GroupSettingsForm({
                           style={{ textDecoration: "none", color: "inherit" }}
                         >
                           <div className="just-flex">
-                            <img src={u.profilePic || "/profile.png"} alt="" />
+                            <img
+                              src={u.profilePic || "/profile.png"}
+                              alt="example"
+                            />
                             <p className="paragraph-lg">{u.name}</p>
                           </div>
                         </Link>

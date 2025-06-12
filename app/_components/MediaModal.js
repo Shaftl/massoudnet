@@ -17,7 +17,7 @@ export default function MediaModal({
         {current.endsWith(".mp4") ? (
           <video src={current} controls autoPlay className={styles.media} />
         ) : (
-          <img src={current} className={styles.media} alt="" />
+          <img src={current} className={styles.media} alt="Example" />
         )}
         <div className={styles.nav}>
           {currentIndex > 0 && (
