@@ -131,7 +131,8 @@ export default function ForgotPassword() {
         {step === 1 && (
           <>
             <p className={styles.stepText}>
-              Enter your email address and we'll send you a verification code.
+              Enter your email address and we&apos;ll send you a verification
+              code.
             </p>
             <input
               className={styles.input}
