@@ -14,10 +14,10 @@
     "emoji-picker-react": "^4.12.2",
     "face-api.js": "^0.22.2",
     "next": "^15.3.2",
-    "react": "^19.1.0",
+    "react": "18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-country-region-selector": "^4.0.2",
-    "react-dom": "^19.1.0",
+    "react-dom": "18.2.0",
     "react-easy-crop": "^5.4.2",
     "react-redux": "^9.2.0",
     "react-sortablejs": "^6.1.4",
@@ -26,7 +26,11 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/node": "^24.0.1",
+    "@types/react": "^19.1.8",
+    "@typescript-eslint/parser": "^8.34.0",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2"
+    "eslint-config-next": "15.3.2",
+    "typescript": "^5.8.3"
   }
 }
