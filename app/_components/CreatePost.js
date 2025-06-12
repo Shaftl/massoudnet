@@ -4,7 +4,8 @@ import styles from "./CreatePost.module.css";
 import { useState, useEffect, useCallback } from "react";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import { uploadToCloudinary } from "@/lib/uploadToCloudinary";
+import { uploadToCloudinary } from "../../lib/uploadToCloudinary";
+
 import dynamic from "next/dynamic";
 
 // Dynamically import EmojiPicker to avoid SSR errors
