@@ -780,7 +780,7 @@ export default function OtherProfile() {
                       )}
                     </>
                   ) : (
-                    <p>This user's posts are private.</p>
+                    <p>This user{"'"}s posts are private.</p>
                   )}
                 </div>
               </div>
