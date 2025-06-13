@@ -421,6 +421,7 @@ strong {
 .Toastify__toast-container {
   z-index: 999999 !important;
   font-size: 1.4rem;
+  font-family: "Outfit", sans-serif; /* English font */
 }
 
 /* app/globals.css */
